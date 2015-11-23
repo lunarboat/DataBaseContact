@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewContactViewController.h
 //  DataBaseContact
 //
 //  Created by lunarboat on 15/9/7.
@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ContactsDao.h"
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
+@interface NewContactViewController : UIViewController
 
 @end
-

@@ -14,6 +14,13 @@
 		3E840CE81B9DA44D00828E2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E840CE71B9DA44D00828E2E /* Images.xcassets */; };
 		3E840CEB1B9DA44D00828E2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E840CE91B9DA44D00828E2E /* LaunchScreen.xib */; };
 		3E840CF71B9DA44D00828E2E /* DataBaseContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840CF61B9DA44D00828E2E /* DataBaseContactTests.m */; };
+		3E840D021B9DA48F00828E2E /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840D011B9DA48F00828E2E /* Contact.m */; };
+		3E840D061B9DA53B00828E2E /* DatebaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840D051B9DA53B00828E2E /* DatebaseUtil.m */; };
+		3E840D081B9DA64000828E2E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3E840D071B9DA64000828E2E /* Podfile */; };
+		3E840D0B1B9DAA1400828E2E /* ContactsDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840D0A1B9DAA1400828E2E /* ContactsDao.m */; };
+		3E840D111B9DBE0000828E2E /* NewContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840D101B9DBE0000828E2E /* NewContactViewController.m */; };
+		3E840D141B9DC7CF00828E2E /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E840D131B9DC7CF00828E2E /* UpdateViewController.m */; };
+		75BD820786B5D900E2D3D4AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AE18EEA39111CBC76DECCC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11AE18EEA39111CBC76DECCC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E840CD71B9DA44D00828E2E /* DataBaseContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E840CDB1B9DA44D00828E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E840CDC1B9DA44D00828E2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +48,19 @@
 		3E840CF01B9DA44D00828E2E /* DataBaseContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataBaseContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E840CF51B9DA44D00828E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E840CF61B9DA44D00828E2E /* DataBaseContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBaseContactTests.m; sourceTree = "<group>"; };
+		3E840D001B9DA48F00828E2E /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		3E840D011B9DA48F00828E2E /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		3E840D041B9DA53B00828E2E /* DatebaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatebaseUtil.h; sourceTree = "<group>"; };
+		3E840D051B9DA53B00828E2E /* DatebaseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatebaseUtil.m; sourceTree = "<group>"; };
+		3E840D071B9DA64000828E2E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E840D091B9DAA1400828E2E /* ContactsDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDao.h; sourceTree = "<group>"; };
+		3E840D0A1B9DAA1400828E2E /* ContactsDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsDao.m; sourceTree = "<group>"; };
+		3E840D0F1B9DBE0000828E2E /* NewContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewContactViewController.h; sourceTree = "<group>"; };
+		3E840D101B9DBE0000828E2E /* NewContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewContactViewController.m; sourceTree = "<group>"; };
+		3E840D121B9DC7CE00828E2E /* UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateViewController.h; sourceTree = "<group>"; };
+		3E840D131B9DC7CF00828E2E /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
+		51DCA3862C81248DB8068B6C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8241F4116606F6BEE44B20 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BD820786B5D900E2D3D4AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017B1F8E9A8EAE037096AAD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AE18EEA39111CBC76DECCC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E840CCE1B9DA44D00828E2E = {
 			isa = PBXGroup;
 			children = (
+				3E840D071B9DA64000828E2E /* Podfile */,
 				3E840CD91B9DA44D00828E2E /* DataBaseContact */,
 				3E840CF31B9DA44D00828E2E /* DataBaseContactTests */,
 				3E840CD81B9DA44D00828E2E /* Products */,
+				B9B8479A11A989DF24D9EAB8 /* Pods */,
+				017B1F8E9A8EAE037096AAD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +114,15 @@
 		3E840CD91B9DA44D00828E2E /* DataBaseContact */ = {
 			isa = PBXGroup;
 			children = (
+				3E840D031B9DA4AE00828E2E /* ModelAndDatebase */,
 				3E840CDE1B9DA44D00828E2E /* AppDelegate.h */,
 				3E840CDF1B9DA44D00828E2E /* AppDelegate.m */,
 				3E840CE11B9DA44D00828E2E /* ViewController.h */,
 				3E840CE21B9DA44D00828E2E /* ViewController.m */,
+				3E840D0F1B9DBE0000828E2E /* NewContactViewController.h */,
+				3E840D101B9DBE0000828E2E /* NewContactViewController.m */,
+				3E840D121B9DC7CE00828E2E /* UpdateViewController.h */,
+				3E840D131B9DC7CF00828E2E /* UpdateViewController.m */,
 				3E840CE41B9DA44D00828E2E /* Main.storyboard */,
 				3E840CE71B9DA44D00828E2E /* Images.xcassets */,
 				3E840CE91B9DA44D00828E2E /* LaunchScreen.xib */,
@@ -119,6 +157,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E840D031B9DA4AE00828E2E /* ModelAndDatebase */ = {
+			isa = PBXGroup;
+			children = (
+				3E840D001B9DA48F00828E2E /* Contact.h */,
+				3E840D011B9DA48F00828E2E /* Contact.m */,
+				3E840D041B9DA53B00828E2E /* DatebaseUtil.h */,
+				3E840D051B9DA53B00828E2E /* DatebaseUtil.m */,
+				3E840D091B9DAA1400828E2E /* ContactsDao.h */,
+				3E840D0A1B9DAA1400828E2E /* ContactsDao.m */,
+			);
+			name = ModelAndDatebase;
+			sourceTree = "<group>";
+		};
+		B9B8479A11A989DF24D9EAB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51DCA3862C81248DB8068B6C /* Pods.debug.xcconfig */,
+				7F8241F4116606F6BEE44B20 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E840CFA1B9DA44D00828E2E /* Build configuration list for PBXNativeTarget "DataBaseContact" */;
 			buildPhases = (
+				AC91C0A11421F7742DB7DFF1 /* Check Pods Manifest.lock */,
 				3E840CD31B9DA44D00828E2E /* Sources */,
 				3E840CD41B9DA44D00828E2E /* Frameworks */,
 				3E840CD51B9DA44D00828E2E /* Resources */,
+				B2234ED5533648B6CC0DC81E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +263,7 @@
 			files = (
 				3E840CE61B9DA44D00828E2E /* Main.storyboard in Resources */,
 				3E840CEB1B9DA44D00828E2E /* LaunchScreen.xib in Resources */,
+				3E840D081B9DA64000828E2E /* Podfile in Resources */,
 				3E840CE81B9DA44D00828E2E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +277,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC91C0A11421F7742DB7DFF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2234ED5533648B6CC0DC81E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E840CD31B9DA44D00828E2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E840D021B9DA48F00828E2E /* Contact.m in Sources */,
+				3E840D061B9DA53B00828E2E /* DatebaseUtil.m in Sources */,
 				3E840CE31B9DA44D00828E2E /* ViewController.m in Sources */,
+				3E840D141B9DC7CF00828E2E /* UpdateViewController.m in Sources */,
+				3E840D0B1B9DAA1400828E2E /* ContactsDao.m in Sources */,
 				3E840CE01B9DA44D00828E2E /* AppDelegate.m in Sources */,
 				3E840CDD1B9DA44D00828E2E /* main.m in Sources */,
+				3E840D111B9DBE0000828E2E /* NewContactViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +448,7 @@
 		};
 		3E840CFB1B9DA44D00828E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DCA3862C81248DB8068B6C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataBaseContact/Info.plist;
@@ -357,6 +459,7 @@
 		};
 		3E840CFC1B9DA44D00828E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8241F4116606F6BEE44B20 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataBaseContact/Info.plist;
@@ -418,6 +521,7 @@
 				3E840CFC1B9DA44D00828E2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E840CFD1B9DA44D00828E2E /* Build configuration list for PBXNativeTarget "DataBaseContactTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +530,7 @@
 				3E840CFF1B9DA44D00828E2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

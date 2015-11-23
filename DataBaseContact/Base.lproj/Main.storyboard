@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DyK-mN-58B">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--联系人-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,185 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MKf-Yh-OS5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactInfo" textLabel="L18-GH-wxZ" detailTextLabel="Vac-ph-1rX" style="IBUITableViewCellStyleSubtitle" id="pMl-yW-4YW">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pMl-yW-4YW" id="zvi-kL-uaY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L18-GH-wxZ">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vac-ph-1rX">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="K1F-Gj-xmy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AS7-IO-yRu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MKf-Yh-OS5" secondAttribute="trailing" id="3ib-2r-jdS"/>
+                            <constraint firstItem="MKf-Yh-OS5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a1N-hj-7jV"/>
+                            <constraint firstItem="MKf-Yh-OS5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lpu-Xi-AOk"/>
+                            <constraint firstItem="MKf-Yh-OS5" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ovS-G4-Eaw"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="联系人" id="xSH-Au-JX9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zsD-L7-EkD">
+                            <connections>
+                                <segue destination="GTB-iV-4b7" kind="show" id="irT-tj-AnO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_tableView" destination="MKf-Yh-OS5" id="tov-6X-7TH"/>
+                        <segue destination="rBj-Is-zqM" kind="show" identifier="ToSelectedContact" id="PYR-HB-feJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="611" y="221"/>
+        </scene>
+        <!--新联系人-->
+        <scene sceneID="qod-BW-wC0">
+            <objects>
+                <viewController id="GTB-iV-4b7" customClass="NewContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTS-hZ-MMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cNL-1t-8tW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wX2-iE-JOB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpE-h4-Fmy">
+                                <rect key="frame" x="175" y="175" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="msS-l1-HEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-3L-Az7">
+                                <rect key="frame" x="175" y="248" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XpE-h4-Fmy" firstAttribute="trailing" secondItem="H3a-3L-Az7" secondAttribute="trailing" id="4bI-D2-Llx"/>
+                            <constraint firstItem="H3a-3L-Az7" firstAttribute="leading" secondItem="XpE-h4-Fmy" secondAttribute="leading" id="S8o-ZS-2kY"/>
+                            <constraint firstItem="XpE-h4-Fmy" firstAttribute="top" secondItem="wTS-hZ-MMB" secondAttribute="bottom" constant="111" id="eSu-iD-h49"/>
+                            <constraint firstItem="H3a-3L-Az7" firstAttribute="top" secondItem="XpE-h4-Fmy" secondAttribute="bottom" constant="43" id="kGw-qb-aJJ"/>
+                            <constraint firstItem="XpE-h4-Fmy" firstAttribute="centerX" secondItem="wX2-iE-JOB" secondAttribute="centerX" id="yvR-dy-6g1"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="新联系人" id="cR7-wG-aAe">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="dNL-c6-FAA"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="DY3-ag-N2H">
+                            <connections>
+                                <action selector="saveContactClick:" destination="GTB-iV-4b7" id="grV-TW-ntX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="newNameTf" destination="XpE-h4-Fmy" id="evx-fC-vgN"/>
+                        <outlet property="newNumberTf" destination="H3a-3L-Az7" id="OW7-yr-48y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEB-kk-57C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="221"/>
+        </scene>
+        <!--修改信息-->
+        <scene sceneID="XOb-DD-Syy">
+            <objects>
+                <viewController id="rBj-Is-zqM" customClass="UpdateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5A2-ka-bex"/>
+                        <viewControllerLayoutGuide type="bottom" id="1aB-OZ-Jad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PfL-eW-EiZ">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZ7-vU-6s2">
+                                <rect key="frame" x="175" y="175" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Xh7-tn-r7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-zQ-e6h">
+                                <rect key="frame" x="175" y="264" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vC4-zQ-e6h" firstAttribute="top" secondItem="LZ7-vU-6s2" secondAttribute="bottom" constant="59" id="5cy-Yo-8rP"/>
+                            <constraint firstItem="vC4-zQ-e6h" firstAttribute="leading" secondItem="LZ7-vU-6s2" secondAttribute="leading" id="Adg-6O-eti"/>
+                            <constraint firstItem="vC4-zQ-e6h" firstAttribute="centerX" secondItem="PfL-eW-EiZ" secondAttribute="centerX" id="MBm-Ez-kfp"/>
+                            <constraint firstItem="LZ7-vU-6s2" firstAttribute="trailing" secondItem="vC4-zQ-e6h" secondAttribute="trailing" id="urJ-Ox-GLf"/>
+                            <constraint firstItem="LZ7-vU-6s2" firstAttribute="top" secondItem="5A2-ka-bex" secondAttribute="bottom" constant="111" id="yZW-da-hsr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="修改信息" id="ZRq-y8-VUc">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="uva-vx-qji"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="Ddb-Vy-5aX">
+                            <connections>
+                                <action selector="saveContact:" destination="rBj-Is-zqM" id="ABX-or-lvB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTf" destination="LZ7-vU-6s2" id="zed-Y7-E5K"/>
+                        <outlet property="numberTf" destination="vC4-zQ-e6h" id="utG-S2-fTi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EU1-3E-gOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="966"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZGR-Zv-O42">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DyK-mN-58B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zJn-kn-79h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zs5-AE-rZP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNk-0L-mw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="216"/>
         </scene>
     </scenes>
 </document>

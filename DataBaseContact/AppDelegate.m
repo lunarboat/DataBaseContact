@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ContactsDao.h"
 
 @interface AppDelegate ()
 
